@@ -130,10 +130,12 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\MembersController.cs" />
     <Compile Include="Controllers\RegistersController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\EFmodels\Member.cs" />
     <Compile Include="Models\EFmodels\Model1.cs" />
     <Compile Include="Models\EFmodels\Register.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -179,6 +181,11 @@
     <Content Include="Views\Registers\Details.cshtml" />
     <Content Include="Views\Registers\Edit.cshtml" />
     <Content Include="Views\Registers\Index.cshtml" />
+    <Content Include="Views\Members\Create.cshtml" />
+    <Content Include="Views\Members\Delete.cshtml" />
+    <Content Include="Views\Members\Details.cshtml" />
+    <Content Include="Views\Members\Edit.cshtml" />
+    <Content Include="Views\Members\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

@@ -8,14 +8,18 @@ namespace Events.Site.Models.EFmodels
     public partial class Model1 : DbContext
     {
         public Model1()
-            : base("name=Model1")
+            : base("name=Model2")
         {
         }
 
+        public virtual DbSet<Member> Members { get; set; }
         public virtual DbSet<Register> Registers { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
+            modelBuilder.Entity<Member>()
+                .Property(e => e.Cellphone)
+                .IsUnicode(false);
         }
     }
 }
